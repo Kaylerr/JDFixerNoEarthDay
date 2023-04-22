@@ -75,20 +75,9 @@ namespace JDFixer
             tmp.rectTransform.SetParent(canvas.transform, false);
             tmp.rectTransform.transform.localPosition = Vector3.zero;
             tmp.rectTransform.anchoredPosition = position;
-
-            if (DateTime.Compare(DateTime.Now, new DateTime(DateTime.Now.Year, 4, 22)) >= 0 && DateTime.Compare(DateTime.Now, new DateTime(DateTime.Now.Year, 4, 23)) < 1)
-            {
-                earthday = true;
-                tmp.text = "Hello there.\nMaking mods is hard work. If JDFixer has helped you,\nI ask one favor in return.\n <#ffff00>Today is Earth Day. We are in a climate emergency.\nI ask you to do anything and everything you can to preserve our and your future.\nWe CAN do this together.";
-            }
-            else if (DateTime.Compare(DateTime.Now, new DateTime(DateTime.Now.Year, 4, 1)) >= 0 && DateTime.Compare(DateTime.Now, new DateTime(DateTime.Now.Year, 4, 2)) < 1)
-            {
-                tmp.text = "Hello, Happy April Fools and have fun with this new game mode!\nHint - If you want out, you may turn it off in the config ^^";
-            }
-            else
-            {
+         
                 tmp.text = "";
-            }
+           
             tmp.fontSize = 0.12f;
             tmp.color = new Color(1f, 0f, 0.5f);
             tmp.alpha = 0f;
